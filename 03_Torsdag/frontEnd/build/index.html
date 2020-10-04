@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="main">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>FIRST NAME</th>
+                        <th>LAST NAME</th>
+                        <th>PHONE</th>
+                        <th>STREET</th>
+                        <th>ZIP</th>
+                        <th>CITY</th>
+                    </tr>
+                </thead>
+                <tbody id="tb"></tbody>
+            </table>
+            
+
+            <div class="container"></div>
+            <button id="refresh" class="btn btn-info">Refresh page</button>
+              <!-- Trigger the modal with a button -->
+              <button type="button" class="btn btn-info" id="myBtn">Add New Person</button>
+
+              <!-- Modal -->
+              <div class="modal" id="myModal">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+
+                      <h5>Add Person:</h5>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                      <form role="form">
+                        <div class="form-group">
+                          <label for="setFName"> First Name:</label>
+                          <input type="text" class="form-control" id="setFName" placeholder="Enter first name">
+                        </div>
+                        <div class="form-group">
+                          <label for="setLName">Last Name:</label>
+                          <input type="text" class="form-control" id="setLName" placeholder="Enter last name">
+                        </div>
+                        <div class="form-group">
+                          <label for="setPhone">Phone:</label>
+                          <input type="text" class="form-control" id="setPhone" placeholder="Enter phone">
+                        </div>
+                        <div class="form-group">
+                          <label for="setStreet">Street:</label>
+                          <input type="text" class="form-control" id="setStreet" placeholder="Enter street">
+                        </div>
+                        <div class="form-group">
+                          <label for="setZip">Zip:</label>
+                          <input type="text" class="form-control" id="setZip" placeholder="Enter zip">
+                        </div>
+                        <div class="form-group">
+                          <label for="setCity">City:</label>
+                          <input type="text" class="form-control" id="setCity" placeholder="Enter city">
+                          <button type="submit" id="addBtn" class="btn btn-success btn-block">Add</button>
+                        </div>
+                        
+                      </form>
+                    </div>
+
+                  </div>
+                  
+                </div>
+ 
+            <script src="bundle.js"></script>
+    </body>
+</html>
